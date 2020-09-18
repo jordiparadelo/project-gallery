@@ -1,0 +1,47 @@
+/* 
+ * Fonts 
+ */
+
+ /* Poppins */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Poppins Regular'), local('Poppins-Regular'),
+         url('./assets/fonts/poppins/poppins-regular.woff2') format('woff2'), 
+         url('./assets/fonts/poppins/poppins-regular.woff') format('woff'), 
+         url('./assets/fonts/poppins/poppins-regular.ttf') format('truetype'), 
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Poppins Bold'), local('Poppins-Bold'),
+         url('./assets/fonts/poppins/poppins-700.woff2') format('woff2'), 
+         url('./assets/fonts/poppins/poppins-700.woff') format('woff'), 
+         url('./assets/fonts/poppins/poppins-700.ttf') format('truetype'), 
+  }
+
+  /* Sora */
+@font-face {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(''),
+         url('./assets/fonts/sora/sora-v1-latin-regular.woff2') format('woff2'), 
+         url('./assets/fonts/sora/sora-v1-latin-regular.woff') format('woff'), 
+         url('./assets/fonts/sora/sora-v1-latin-regular.ttf') format('truetype'), 
+         }
+  @font-face {
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: local(''),
+         url('./assets/fonts/sora/sora-v1-latin-800.woff2') format('woff2'), 
+         url('./assets/fonts/sora/sora-v1-latin-800.woff') format('woff'), 
+         url('./assets/fonts/sora/sora-v1-latin-800.ttf') format('truetype'), 
+         }
