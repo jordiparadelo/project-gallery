@@ -7,6 +7,57 @@
     <link rel="stylesheet" href="./app.css">
 </head>
 <body>
-    
+    <div id="app">
+        <div class="app-bkg">
+            <div class="bkg_side"></div>
+        </div>
+        <nav id="nav">
+            <a class="logo" href="#">Amace</a>
+            <div class="nav_links">
+                <a href="#" class="link">About</a>
+                <a href="#" class="link">Project</a>
+                <a href="#" class="link">Contact</a>
+                <button class="ham-menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <!-- Project Gallery -->
+                    <div class="project-gallery">
+                        <!-- Project Images -->
+                        <div class="project_image">
+                            <h2>Projects</h2>
+                            <nav class="project-filters">
+                                <button class="filter active">All projects</button>
+                                <button class="filter">Product</button>
+                                <button class="filter">Branding</button>
+                            </nav>
+                            <div class="gallery_images">
+                                <img src="" alt="" class="images_item">
+                            </div>
+                        </div>
+                        <!-- Project Handler -->
+                        <button class="poject-handler"></button>
+                        <!-- Project List -->
+                        <ul class="project_list">
+                            <a href="#" class="list-item active"><span>Project item</span><span
+                                    class="item-index">01</span>
+                            </a>
+                            <a href="#" class="list-item"><span>Project item</span><span class="item-index">01</span>
+                            </a>
+                            <a href="#" class="list-item"><span>Project item</span><span class="item-index">01</span>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Scripts -->
+    <script type="module" src="./app.js"></script>
 </body>
 </html>
