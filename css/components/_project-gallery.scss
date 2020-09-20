@@ -107,7 +107,7 @@
       flex-grow: 1;
       background-color: #f1f1f1; // fallback
       overflow: hidden;
-
+      
       .images_item {
         position: absolute;
         top: 0;
@@ -115,6 +115,14 @@
         height: 100%;
         width: 100%;
         object-fit: cover;
+
+        &:not(.active){
+          clip-path: inset(100% 0 0 0);
+        }
+
+        &[data-active]{
+          z-index: 5;
+        }
       }
     }
   }
@@ -171,9 +179,11 @@
       #{"--topY"}: 100;
       #{"--bottomY"}: 100;
 
-      &[data-active] .text-wrapper {
-        [data-clone] {
-          // clip-path: inset(0% 0% 0% 0%);
+      &[data-active] {
+        .text-wrapper {
+          [data-clone] {
+            clip-path: inset(0 0 0 0);
+          }
         }
       }
 

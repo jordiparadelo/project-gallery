@@ -18,7 +18,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background: white;
+  background: black;
   overscroll-behavior: none;
   margin: 0;
   padding: 0;
@@ -107,6 +107,10 @@
   width: 100%;
   overflow: hidden;
   background-color: #101010;
+}
+
+* #app[data-status="loading"] {
+  visibility: hidden;
 }
 
 * #app main {
@@ -348,6 +352,15 @@
      object-fit: cover;
 }
 
+#app .project-gallery .project_image .gallery_images .images_item:not(.active) {
+  -webkit-clip-path: inset(100% 0 0 0);
+          clip-path: inset(100% 0 0 0);
+}
+
+#app .project-gallery .project_image .gallery_images .images_item[data-active] {
+  z-index: 5;
+}
+
 #app .project-gallery .poject-handler {
   position: absolute;
   left: 0;
@@ -410,6 +423,11 @@
           filter: drop-shadow(0 0 6px var(--colorize));
   --topY: 100;
   --bottomY: 100;
+}
+
+#app .project-gallery .project_list .list-item[data-active] .text-wrapper [data-clone] {
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
 }
 
 #app .project-gallery .project_list .list-item .text-wrapper {
