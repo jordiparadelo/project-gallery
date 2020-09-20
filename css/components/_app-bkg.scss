@@ -1,0 +1,16 @@
+@import "variables";
+
+.app-bkg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $project-color;
+  height: 100%;
+  width: 35vw;
+  @include media("<=tablet") {
+    width: 100%;
+      height: 80vh;
+  }
+  .bkg_side {
+  }
+}
